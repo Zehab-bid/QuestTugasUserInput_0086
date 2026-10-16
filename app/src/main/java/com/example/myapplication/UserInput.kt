@@ -135,4 +135,47 @@ fun FormBiodataScreen(modifier: Modifier) {
                         }
 
                         Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_medium)))
-}
+
+                        OutlinedTextField(
+                            value = email,
+                            onValueChange = { email = it },
+                            label = { Text(stringResource(id = R.string.hint_email)) },
+                            modifier = Modifier.fillMaxWidth(),
+                            shape = RoundedCornerShape(12.dp)
+                        )
+
+                        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_medium)))
+
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_small))
+                        ) {
+                            OutlinedTextField(
+                                value = tglLahir,
+                                onValueChange = { tglLahir = it },
+                                label = { Text(stringResource(id = R.string.hint_tgl_lahir)) },
+                                modifier = Modifier.weight(1f),
+                                shape = RoundedCornerShape(12.dp),
+                                trailingIcon = {
+                                    Icon(
+                                        painter = painterResource(id = android.R.drawable.ic_menu_my_calendar),
+                                        contentDescription = null
+                                    )
+                                }
+                            )
+                            OutlinedTextField(
+                                value = experience,
+                                onValueChange = { experience = it },
+                                label = { Text(stringResource(id = R.string.hint_experience)) },
+                                modifier = Modifier.weight(1f),
+                                shape = RoundedCornerShape(12.dp),
+                                trailingIcon = {
+                                    Icon(
+                                        painter = painterResource(id = android.R.drawable.ic_input_add),
+                                        contentDescription = null
+                                    )
+                                }
+                            )
+                        }
+
+                        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_medium)))
