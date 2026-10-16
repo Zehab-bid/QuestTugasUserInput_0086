@@ -57,4 +57,16 @@ fun FormBiodataScreen(modifier: Modifier) {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
-        ) }
+        ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(dimensionResource(id = R.dimen.header_height))
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.banner_image),
+                    contentDescription = null,
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop
+                )
+            }
