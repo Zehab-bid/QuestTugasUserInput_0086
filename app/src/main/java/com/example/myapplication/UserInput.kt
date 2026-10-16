@@ -70,3 +70,25 @@ fun FormBiodataScreen(modifier: Modifier) {
                     contentScale = ContentScale.Crop
                 )
             }
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .verticalScroll(rememberScrollState())
+            ) {
+                Spacer(modifier = Modifier.height(200.dp))
+
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .wrapContentHeight(),
+                    shape = RoundedCornerShape(
+                        topStart = dimensionResource(id = R.dimen.corner_radius_card),
+                        topEnd = dimensionResource(id = R.dimen.corner_radius_card)
+                    ),
+                    colors = CardDefaults.cardColors(
+                        containerColor = colorResource(id = R.color.background_card)
+                    ),
+                    elevation = CardDefaults.cardElevation(
+                        defaultElevation = dimensionResource(id = R.dimen.elevation_card)
+                    )
+                )}
