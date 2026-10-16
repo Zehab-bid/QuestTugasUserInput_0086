@@ -97,4 +97,9 @@ fun FormBiodataScreen(modifier: Modifier) {
                             .fillMaxWidth()
                             .padding(dimensionResource(id = R.dimen.padding_large)),
                         horizontalAlignment = Alignment.CenterHorizontally
-                    ) }
+                    ) {
+                        Text(
+                            text = stringResource(id = R.string.title_form),
+                            style = MaterialTheme.typography.headlineSmall,
+                            color = colorResource(id = R.color.purple_title)
+                        )
