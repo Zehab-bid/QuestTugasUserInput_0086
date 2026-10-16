@@ -4,5 +4,8 @@
     <string name="subtitle_form">Silahkan isi biodata Anda dibawah ini !!!</string>
     <string name="hint_nama_depan">Nama Depan</string>
     <string name="hint_nama_belakang">Nama Belakang</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_tgl_lahir">Tgl Lahir</string>
+    <string name="hint_experience">Experience</string>
 
 </resources>
