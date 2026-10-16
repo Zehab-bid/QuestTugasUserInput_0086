@@ -179,3 +179,68 @@ fun FormBiodataScreen(modifier: Modifier) {
                         }
 
                         Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_medium)))
+
+                        Box(
+                            modifier = Modifier.fillMaxWidth(),
+                            contentAlignment = Alignment.CenterStart
+                        ) {
+                            Text(
+                                text = stringResource(id = R.string.label_pilih_skill),
+                                color = colorResource(id = R.color.black),
+                                style = MaterialTheme.typography.bodyLarge
+                            )
+                        }
+
+                        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_small)))
+
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Checkbox(
+                                    checked = isAndroidChecked,
+                                    onCheckedChange = { isAndroidChecked = it }
+                                )
+                                Text(text = stringResource(id = R.string.skill_android))
+                            }
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Checkbox(
+                                    checked = isUiUxChecked,
+                                    onCheckedChange = { isUiUxChecked = it }
+                                )
+                                Text(text = stringResource(id = R.string.skill_uiux))
+                            }
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Checkbox(
+                                    checked = isWebChecked,
+                                    onCheckedChange = { isWebChecked = it }
+                                )
+                                Text(text = stringResource(id = R.string.skill_web))
+                            }
+                        }
+
+                        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_large)))
+
+                        Button(
+                            onClick = { /* Aksi klik tombol */ },
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .height(50.dp),
+                            shape = RoundedCornerShape(12.dp),
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = colorResource(id = R.color.button_bg)
+                            )
+                        ) {
+                            Text(
+                                text = stringResource(id = R.string.btn_proceed),
+                                color = colorResource(id = R.color.text_subtitle)
+                            )
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
