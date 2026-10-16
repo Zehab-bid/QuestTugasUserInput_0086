@@ -3,5 +3,8 @@
     <color name="purple_primary">#6200EE</color>
     <color name="purple_title">#4A148C</color>
     <color name="text_subtitle">#757575</color>
-
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="background_card">#FFFFFF</color>
+    <color name="button_bg">#E0E0E0</color>
 </resources>
