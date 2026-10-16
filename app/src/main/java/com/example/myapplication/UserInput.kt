@@ -103,3 +103,14 @@ fun FormBiodataScreen(modifier: Modifier) {
                             style = MaterialTheme.typography.headlineSmall,
                             color = colorResource(id = R.color.purple_title)
                         )
+
+                        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_small)))
+
+                        Text(
+                            text = stringResource(id = R.string.subtitle_form),
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = colorResource(id = R.color.text_subtitle)
+                        )
+
+                        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.padding_medium)))
+}
